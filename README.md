@@ -6,12 +6,11 @@
 2. 为保证该shell的正确性，每执行一条命令都与`/bin/bash`对照。
 3. 等待输入时显示提示符`NJUSH:~$ `。
 4. 输入`help`可查看内置命令的说明。
-    1. `exit`: 清理资源退出程序
+    1. `exit`: 清理资源退出程序。
     2. `cd [dir]`: 改变当前工作目录，默认有且只有一个参数。
     3. `history [-c] [number]`: 简化的bash history命令。
     4. `!!`: 执行最近一条命令。
     5. `!String`: 执行历史命令中最近的以String开头的命令。
-    ...
 5. 支持多个(IO重定向)进程以及内置命令之间的管道。
     1. 如`ls -l | grep njush | wc -l > junk`。
     2. 如`sleep 10 | sleep 10 | sleep 10 > empty`。
